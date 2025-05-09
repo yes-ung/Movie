@@ -53,7 +53,7 @@ header {
 .promo-img {
   width: 30%;
   height: 5rem;
-  background-image: url(../../img/Header_Banner1.jpg);
+  background-image: url(./img/Header_Banner1.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -87,7 +87,7 @@ header {
   flex-direction: row;
 }
 /* 2-3 글로벌 내비게이션(GNB) */
-nav {
+#navi {
   display: flex;
   justify-content: space-between;
   align-items: center;

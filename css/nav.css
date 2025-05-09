@@ -21,3 +21,9 @@ text-align: center;}
     width: 100%;
 }
 
+.NotImplemented{
+    width: 65rem; height: 30rem; margin: 0 auto;
+    font-size: 2rem; border: 0.5rem solid skyblue;
+    padding: 2rem;
+   
+}

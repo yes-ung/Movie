@@ -1,5 +1,6 @@
 nav { background-color: rgb(243, 243, 243);padding-top: 5rem;}
-
+.navOuter{ display: flex; justify-content: center;}
+.navinner{display: flex; flex-direction: column;}
 
 
 

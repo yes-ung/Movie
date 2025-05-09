@@ -1,6 +1,7 @@
-nav { background-color: rgb(243, 243, 243);padding-top: 5rem;}
-.navOuter{ display: flex; justify-content: center;}
-.navinner{display: flex; flex-direction: column;}
+nav { background-color: rgb(243, 243, 243); padding-top: 5rem;}
+/* .navOuter{ display: flex; justify-content: center; margin: 0 auto;}  */
+.navOuter{width: 65rem; margin: 0 auto; } 
+/* .navinner{display: flex; flex-direction: column;}  */
 
 
 

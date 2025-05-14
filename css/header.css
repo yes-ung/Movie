@@ -28,7 +28,7 @@
 .promo-img {
   width: 40vw;
   height: 15vh;
-  background-image: url(../../img/Header_Banner1.jpg);
+  background-image: url(../img/Header_Banner1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -148,22 +148,22 @@
   object-fit: contain;
 }
 /* TODO <!-- 4. 스와이프 컨테이너 --> */
-.swiper {
+header .swiper {
   width: 90%;
   height: auto;
   margin: 0.5rem auto;
 }
-.swiper-wrapper {
+header .swiper-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.swiper-slide {
+header .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.swiper-slide img {
+header .swiper-slide img {
   width: 100%;
   height: 100%;
   display: block;
@@ -265,7 +265,7 @@
   width: 20%;
   height: 2rem;
 }
-.swiper {
+header .swiper {
   width: 80%;
 }
 

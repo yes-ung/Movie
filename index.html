@@ -10,8 +10,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
+  <!-- 라이브러리 및 각종 플러그인 첨부 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <!-- header영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-    <div id="page">
+    <header>
+     <div id="page">
       <!-- 1. 프로모션 바 -->
       <div class="promo-bar">
         <div class="promo-left">
@@ -29,7 +33,7 @@
         <div class="logo">
           <a href="/">
             <img
-              src="../img/KakaoTalk_20250512_084053501_01.png"
+              src="./img/KakaoTalk_20250512_084053501_01.png"
               alt="CGV 로고"
             />
           </a>
@@ -40,7 +44,7 @@
             <li>
               <a href="#"
                 ><img
-                  src="../img/KakaoTalk_20250512_084053501_04.png"
+                  src="./img/KakaoTalk_20250512_084053501_04.png"
                   alt="회원가입아이콘"
                 /><br />회원가입</a
               >
@@ -48,7 +52,7 @@
             <li>
               <a href="#"
                 ><img
-                  src="../img/KakaoTalk_20250512_084053501_03.png"
+                  src="./img/KakaoTalk_20250512_084053501_03.png"
                   alt="로그인아이콘"
                 /><br />로그인</a
               >
@@ -56,7 +60,7 @@
             <li>
               <a href="#"
                 ><img
-                  src="../img/KakaoTalk_20250512_084053501_02.png"
+                  src="./img/KakaoTalk_20250512_084053501_02.png"
                   alt="MYCGV아이콘"
                 /><br />MYCGV</a
               >
@@ -64,7 +68,7 @@
             <li>
               <a href="#"
                 ><img
-                  src="../img/KakaoTalk_20250512_084053501.png"
+                  src="./img/KakaoTalk_20250512_084053501.png"
                   alt="고객센터아이콘"
                 /><br />고객센터</a
               >
@@ -90,7 +94,7 @@
             placeholder=" 세븐베일즈"
             aria-label="검색어 입력"
           />
-          <a href="#"><img src="../img/검색돋보기.png" alt="검색" /></a>
+          <a href="#"><img src="./img/검색돋보기.png" alt="검색" /></a>
         </div>
       </nav>
 
@@ -120,9 +124,8 @@
     </div>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var headerSwiper = new Swiper(".mySwiper", {
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
@@ -134,9 +137,10 @@
         },
       });
     </script>
+    </header>
     <!-- header영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <!-- nav영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-    <nav>
+    <nav id="nav">
       <div class="navOuter">
         <div class="navinner">
           <div class="tmenu">
@@ -342,9 +346,7 @@
           </div>
         </div>  
     </div>
- </nav>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </nav>
     <script src="./js/nav.js"></script>
 <!-- nav영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <main>

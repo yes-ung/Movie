@@ -1,0 +1,97 @@
+/* 000_basic_setting */
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+section a {
+  text-decoration: none;
+  color: inherit;
+}
+#container {
+  width: 99vw;
+  height: auto;
+  margin: 0 auto;
+}
+.section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.title_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title_wrap h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.btn {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.specialHall_content {
+  margin-top: 20px;
+}
+
+.img_wrap img {
+  width: 100%;
+  display: flex;
+  align-self: start;
+  border-radius: 8px;
+}
+
+.specialHall_list {
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.specialHall_list li {
+  display: flex;
+  flex: 1 1 calc(100% - 16px);
+  background-color: #f0f0f0;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.specialHall_hashTag {
+  color: #555;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .specialHall_content {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .specialHall_link {
+    flex: 50%;
+  }
+
+  .specialHall_link img {
+    width: 100%;
+  }
+
+  .specialHall_list {
+    flex: 0 0 45%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+  }
+}

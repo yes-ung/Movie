@@ -1,8 +1,12 @@
-#page2 {
-  width: 99vw;
-  margin: 0 auto;
+
+#page2{
+  width: 96vw;
+  margin: 5rem auto;
   padding: 0;
   box-sizing: border-box;
+ content: "";
+ display: table;
+ clear: both; 
 }
 .clear {
   clear: both;

@@ -1,3 +1,6 @@
+main{max-height: 55vh; overflow: hidden;
+}
+
 /* TODO: main 디자인: 가로 100%, 중앙정렬(상/하 마진) */
 .mainpage {
   width: 100%;

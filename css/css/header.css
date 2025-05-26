@@ -1,0 +1,272 @@
+#page {
+  width: 99vw;
+  margin: 0 auto;
+}
+/* TODO <!-- 1. 프로모션 바 --> */
+.promo-bar {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+}
+.promo-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.promo-date {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.promo-img {
+  width: 40vw;
+  height: 15vh;
+  background-image: url(../img/Header_Banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+/* TODO <!-- 2. 메인 헤더 --> */
+header .main-header {
+  width: 100%;
+  height: 10vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* TODO <!-- 2-1. 로고 --> */
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 5rem;
+  margin-left: 0.5rem;
+}
+.logo a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* TODO <!-- 2-2. customer (유틸리티 메뉴) --> */
+.customer {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  justify-content: right;
+}
+.utility-menu {
+  width: 90%;
+  height: 2.5rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 0.5rem;
+  padding: 0;
+  margin-right: 0.5rem;
+}
+
+.utility-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0.1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.5rem;
+}
+.utility-menu li a {
+  width: 2.5rem;
+  height: 1rem;
+  color: var(--grayscale-60);
+}
+.utility-menu li a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+/* TODO <!-- 3. GNB (글로벌 네비게이션) --> */
+.gnb {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  margin: 0.5rem auto;
+  border-top: 2px dashed var(--red-dark-50);
+  border-bottom: 2px dashed var(--red-dark-50);
+}
+/* TODO <!-- 3-1. 메뉴 --> */
+.gnb ul {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.gnb ul li a {
+  color: var(--grayscale-60);
+}
+/* TODO <!-- 3-2. 검색 --> */
+.search {
+  margin-top: 0.5rem;
+  width: 15rem;
+  height: 1.5rem;
+  border: 1.5px solid var(--red-light-50);
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.search input[type="text"] {
+  width: 80%; /* 부모 요소 너비의 80% */
+  max-width: 12rem;
+  border: none;
+  font-size: 1rem;
+}
+.search a {
+  width: 20%;
+  height: 1.3rem;
+}
+.search a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* TODO <!-- 4. 스와이프 컨테이너 --> */
+header .swiper {
+  width: 90%;
+  height: auto;
+  margin: 0.5rem auto;
+}
+ /* header .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/* header .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  */
+header .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .promo-title {
+  font-size: 2rem;
+}
+.promo-date {
+  font-size: 2rem;
+}
+  .main-header {
+  width: 90%;
+}
+  .utility-menu li {
+  font-size: 0.8rem;
+}
+  .utility-menu li a {
+    width: 3.5rem;
+    height: 1rem;
+  }
+  .gnb {
+  width: 90%;
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem auto;
+  border-top: 3.5px dashed var(--red-dark-50);
+  border-bottom: 3.5px dashed var(--red-dark-50);
+}
+.gnb ul {
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.search {
+  width: 12rem;
+  border: none;
+  border-left: 3px solid var(--grayscale-40);
+  border-right: 3px solid var(--grayscale-40);
+  border-radius: none;
+}
+.search input[type="text"] {
+  max-width: 10rem;
+}
+}
+
+@media screen and (min-width: 1024px) {
+header .main-header {
+  width: 80%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 80%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.utility-menu {
+  display: flex;
+  justify-content: right;
+  margin: 0 auto;
+  height: 4rem;}
+.utility-menu li a {
+  width: 5rem;
+  height: 4rem;
+}
+.gnb {
+  width: 80%;
+  height: 10vh;
+  margin: 0.5rem auto;
+  padding: 0 1rem;
+  border-top: 3.5px dashed var(--red-dark-50);
+  border-bottom: 3.5px dashed var(--red-dark-50);
+}
+.gnb ul {
+  gap: 1.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.search {
+  width: 18rem;
+  height: 2.5rem;
+  border: none;
+  border-left: 3.5px solid var(--grayscale-40);
+  border-right: 3.5px solid var(--grayscale-40);
+  border-radius: none;
+  display: flex;
+  justify-content: space-between;
+}
+.search a {
+  width: 20%;
+  height: 2rem;
+}
+header .swiper {
+  width: 80%;
+}
+
+}

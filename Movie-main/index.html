@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4GV</title>
+    <link rel="stylesheet" href="./css/00_style.css">
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/main2.css">
+    <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/aside2.css" />
+    <link rel="stylesheet" href="./css/cgvfooter.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+  <!-- 라이브러리 및 각종 플러그인 첨부 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <!-- header영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <header>
+     <div id="page">
+      <!-- 1. 프로모션 바 -->
+      <div class="promo-bar">
+        <div class="promo-left">
+          <span class="promo-title">세븐 베일즈</span>
+        </div>
+        <div class="promo-img"></div>
+        <div class="promo-right">
+          <span class="promo-date">5월 14일<br />극장 개봉</span>
+        </div>
+      </div>
+
+      <!-- 2. 메인 헤더 -->
+      <div class="main-header">
+        <!-- 2-1. 로고 -->
+        <div class="logo">
+          <a href="/">
+            <img
+              src="./img/KakaoTalk_20250512_084053501_01.png"
+              alt="CGV 로고"
+            />
+          </a>
+        </div>
+        <!-- 2-2. customer (유틸리티 메뉴) -->
+        <div class="customer">
+          <ul class="utility-menu">
+            <li>
+              <a href="#"
+                ><img
+                  src="./img/KakaoTalk_20250512_084053501_04.png"
+                  alt="회원가입아이콘"
+                /><br />회원가입</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./img/KakaoTalk_20250512_084053501_03.png"
+                  alt="로그인아이콘"
+                /><br />로그인</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./img/KakaoTalk_20250512_084053501_02.png"
+                  alt="MYCGV아이콘"
+                /><br />MYCGV</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./img/KakaoTalk_20250512_084053501.png"
+                  alt="고객센터아이콘"
+                /><br />고객센터</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3. GNB (글로벌 네비게이션) -->
+      <nav class="gnb">
+        <!-- 3-1 메뉴 -->
+        <ul>
+          <li><a href="#">영화</a></li>
+          <li><a href="#">예매</a></li>
+          <li><a href="#">스토어</a></li>
+          <li><a href="#">이벤트</a></li>
+          <li><a href="#">멤버십</a></li>
+        </ul>
+        <!-- 3-2 검색 -->
+        <div class="search">
+          <input
+            type="text"
+            placeholder=" 세븐베일즈"
+            aria-label="검색어 입력"
+          />
+          <a href="#"><img src="./img/검색돋보기.png" alt="검색" /></a>
+        </div>
+      </nav>
+
+      <!-- 4. 스와이프 컨테이너 -->
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://placehold.co/600x400" alt="메인 배너 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://placehold.co/600x400" alt="메인 배너 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://placehold.co/600x400" alt="메인 배너 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://placehold.co/600x400" alt="메인 배너 4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://placehold.co/600x400" alt="메인 배너 5" />
+          </div>
+          <!-- 필요한 만큼 슬라이드 추가 -->
+        </div>
+        <!-- 페이징 -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script>
+      var headerSwiper = new Swiper(".mySwiper1", {
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    </header>
+    <!-- header영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- nav영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <nav id="nav">
+      <div class="navOuter">
+        <div class="navinner">
+          <div class="tmenu">
+              <ul>
+                  <li class="tmenu-hover1"><a href="#none">무비차트</a></li>
+                  <li>|</li>
+                  <li class="tmenu-hover2"><a href="#none">상영예정작</a></li>
+              </ul>
+          </div>    
+          <div class="posterList">
+              <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <!-- 1번 배너 이미지  -->
+                        <div class="poster1">
+                          <ul>
+                              <li><div class="poster-size hover1"><img src="./img/movie1.jpg" alt="영화포스터"><b>파과</b><br>👍93% <small>|</small> 예매율 16.7%
+                                  <div class="p-hover1 h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              <li><div class="poster-size hover2"><img src="./img/movie2.jpg" alt="영화포스터"><b>바이러스</b><br>👍85% <small>|</small> 예매율 11.2%
+                                  <div class="p-hover2  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              <li><div class="poster-size hover3"><img src="./img/movie3.jpg" alt="영화포스터"><b>썬더볼츠</b><br>👍91% <small>|</small> 예매율 10.5%
+                                  <div class="p-hover3  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              <li><div class="poster-size hover4"><img src="./img/movie4.jpg" alt="영화포스터"><b>귀멸의 칼날</b><br>👍94% <small>|</small> 예매율 7.7%
+                                  <div class="p-hover4  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              <li><div class="poster-size hover5"><img src="./img/movie5.jpg" alt="영화포스터"><b>세븐 베일즈</b><br>👍90% <small>|</small> 예매율 5.5%
+                                  <div class="p-hover5  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 2번 배너 이미지  -->
+                          <div class="poster2">
+                              <ul>
+                                  <li><div class="poster-size hover1"><img src="./img/movie6.jpg" alt="영화포스터"><b>야당</b><br>👍89% <small>|</small> 예매율 4.7%
+                                      <div class="p-hover1 h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover2"><img src="./img/movie7.jpg" alt="영화포스터"><b>해피엔드</b><br>👍88% <small>|</small> 예매율 4.2%
+                                      <div class="p-hover2  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover3"><img src="./img/movie8.jpg" alt="영화포스터"><b>플로리다 프로젝트</b><br>👍88% <small>|</small> 예매율 3.5%
+                                      <div class="p-hover3  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover4"><img src="./img/movie9.jpg" alt="영화포스터"><b>거룩한 밤</b><br>👍86% <small>|</small> 예매율 3.2%
+                                      <div class="p-hover4  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover5"><img src="./img/movie10.jpg" alt="영화포스터"><b>마인크래프트 더 무비</b><br>👍85% <small>|</small> 예매율 3.1%
+                                      <div class="p-hover5  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 3번 배너 이미지  -->
+                          <div class="poster3">
+                              <ul>
+                                  <li><div class="poster-size hover1"><img src="./img/movie11.jpg" alt="영화포스터"><b>에이티즈 월드 투어</b><br>👍83% <small>|</small> 예매율 2.7%
+                                      <div class="p-hover1 h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover2"><img src="./img/movie12.jpg" alt="영화포스터"><b>2025 스타레일 감상회</b><br>👍82% <small>|</small> 예매율 2.5%
+                                      <div class="p-hover2  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover3"><img src="./img/movie13.jpg" alt="영화포스터"><b>폴킴,친애하는 당신께</b><br>👍81% <small>|</small> 예매율 2.3%
+                                      <div class="p-hover3  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover4"><img src="./img/movie14.jpg" alt="영화포스터"><b>괴수 8호 : 미션 리컨</b><br>👍79% <small>|</small> 예매율 2.2%
+                                      <div class="p-hover4  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover5"><img src="./img/movie15.jpg" alt="영화포스터"><b>아멜리에</b><br>👍78% <small>|</small> 예매율 5.5%
+                                      <div class="p-hover5  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 4번 배너 이미지  -->
+                          <div class="poster4">
+                              <ul>
+                                  <li><div class="poster-size hover1"><img src="./img/movie16.jpg" alt="영화포스터"><b>슈가 글라스 보틀</b><br>👍76% <small>|</small> 예매율 2.1%
+                                      <div class="p-hover1 h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover2"><img src="./img/movie17.jpg" alt="영화포스터"><b>파이널 데스티네이..</b><br>👍76% <small>|</small> 예매율 1.9%
+                                      <div class="p-hover2  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover3"><img src="./img/movie18.jpg" alt="영화포스터"><b>나미비아의 사막</b><br>👍74% <small>|</small> 예매율 1.7%
+                                      <div class="p-hover3  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover4"><img src="./img/movie19.jpg" alt="영화포스터"><b>콘클라베</b><br>👍73% <small>|</small> 예매율 1.7%
+                                      <div class="p-hover4  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover5"><img src="./img/movie20.jpg" alt="영화포스터"><b>닌자 란타로 극장판</b><br>👍77% <small>|</small> 예매율 1.6%
+                                      <div class="p-hover5  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="posterList2">
+              <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <!-- 1번 배너 이미지  -->
+                        <div class="poster1">
+                          <ul>
+                              <li><div class="poster-size hover1"><img src="./img/movie1.jpg" alt="영화포스터"><b>파과</b><br>👍93% <small>|</small> 예매율 16.7%
+                                  <div class="p-hover1 h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              <li><div class="poster-size hover2"><img src="./img/movie2.jpg" alt="영화포스터"><b>바이러스</b><br>👍85% <small>|</small> 예매율 11.2%
+                                  <div class="p-hover2  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 2번 배너 이미지  -->
+                          <div class="poster2">
+                              <ul>
+                                  <li><div class="poster-size hover3"><img src="./img/movie3.jpg" alt="영화포스터"><b>썬더볼츠</b><br>👍91% <small>|</small> 예매율 10.5%
+                                  <div class="p-hover3  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              <li><div class="poster-size hover4"><img src="./img/movie4.jpg" alt="영화포스터"><b>귀멸의 칼날</b><br>👍94% <small>|</small> 예매율 7.7%
+                                  <div class="p-hover4  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 3번 배너 이미지  -->
+                          <div class="poster3">
+                              <ul>
+                                  <li><div class="poster-size hover5"><img src="./img/movie5.jpg" alt="영화포스터"><b>세븐 베일즈</b><br>👍90% <small>|</small> 예매율 5.5%
+                                  <div class="p-hover5  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover1"><img src="./img/movie6.jpg" alt="영화포스터"><b>야당</b><br>👍89% <small>|</small> 예매율 4.7%
+                                      <div class="p-hover1 h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 4번 배너 이미지  -->
+                          <div class="poster4">
+                              <ul>
+                                  <li><div class="poster-size hover2"><img src="./img/movie7.jpg" alt="영화포스터"><b>해피엔드</b><br>👍88% <small>|</small> 예매율 4.2%
+                                      <div class="p-hover2  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover3"><img src="./img/movie8.jpg" alt="영화포스터"><b>플로리다 프로젝트</b><br>👍88% <small>|</small> 예매율 3.5%
+                                      <div class="p-hover3  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 5번 배너 이미지  -->
+                          <div class="poster5">
+                              <ul>
+                                  <li><div class="poster-size hover4"><img src="./img/movie9.jpg" alt="영화포스터"><b>거룩한 밤</b><br>👍86% <small>|</small> 예매율 3.2%
+                                      <div class="p-hover4  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover5"><img src="./img/movie10.jpg" alt="영화포스터"><b>마인크래프트 더 무비</b><br>👍85% <small>|</small> 예매율 3.1%
+                                      <div class="p-hover5  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 6번 배너 이미지  -->
+                          <div class="poster6">
+                              <ul>
+                                  <li><div class="poster-size hover1"><img src="./img/movie11.jpg" alt="영화포스터"><b>에이티즈 월드 투어</b><br>👍83% <small>|</small> 예매율 2.7%
+                                      <div class="p-hover1 h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover2"><img src="./img/movie12.jpg" alt="영화포스터"><b>2025 스타레일 감상회</b><br>👍82% <small>|</small> 예매율 2.5%
+                                      <div class="p-hover2  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 7번 배너 이미지  -->
+                          <div class="poster7">
+                              <ul>
+                                  <li><div class="poster-size hover3"><img src="./img/movie13.jpg" alt="영화포스터"><b>폴킴,친애하는 당신께</b><br>👍81% <small>|</small> 예매율 2.3%
+                                      <div class="p-hover3  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover4"><img src="./img/movie14.jpg" alt="영화포스터"><b>괴수 8호 : 미션 리컨</b><br>👍79% <small>|</small> 예매율 2.2%
+                                      <div class="p-hover4  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 8번 배너 이미지  -->
+                          <div class="poster8">
+                              <ul>
+                                  <li><div class="poster-size hover5"><img src="./img/movie15.jpg" alt="영화포스터"><b>아멜리에</b><br>👍78% <small>|</small> 예매율 5.5%
+                                      <div class="p-hover5  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover1"><img src="./img/movie16.jpg" alt="영화포스터"><b>슈가 글라스 보틀</b><br>👍76% <small>|</small> 예매율 2.1%
+                                      <div class="p-hover1 h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 9번 배너 이미지  -->
+                          <div class="poster9">
+                              <ul>
+                                 <li><div class="poster-size hover2"><img src="./img/movie17.jpg" alt="영화포스터"><b>파이널 데스티네이..</b><br>👍76% <small>|</small> 예매율 1.9%
+                                      <div class="p-hover2  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover3"><img src="./img/movie18.jpg" alt="영화포스터"><b>나미비아의 사막</b><br>👍74% <small>|</small> 예매율 1.7%
+                                      <div class="p-hover3  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <!-- 10번 배너 이미지  -->
+                          <div class="poster10">
+                              <ul>
+                                  <li><div class="poster-size hover4"><img src="./img/movie19.jpg" alt="영화포스터"><b>콘클라베</b><br>👍73% <small>|</small> 예매율 1.7%
+                                      <div class="p-hover4  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                                  <li><div class="poster-size hover5"><img src="./img/movie20.jpg" alt="영화포스터"><b>닌자 란타로 극장판</b><br>👍77% <small>|</small> 예매율 1.6%
+                                      <div class="p-hover5  h0"><div class="poster-hover"> 상세보기<br>예매하기</div></div></div></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>  
+    </div>
+    </nav>
+    <script src="./js/nav.js"></script>
+<!-- nav영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+      <!-- main 영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <main>
+     <!-- TODO: Event 및 버튼 -->
+    <div class="mainpage">
+      <h1 class="mainh1">
+        EVENT
+        <button class="main_Slashbtn">전체보기 ></button>
+        <button class="main_Slashbtn">||</button>
+      </h1>
+      <!-- TODO: swiper slide  -->
+      <div class="mainbox">
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="mainimg">
+                <a
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44340"
+                ></a>
+                <img src="./img/main/section1.jpg" alt="오구오구" />
+                <div class="maintitle">
+                  5월엔 CGV가 오구오구 <br />
+                  2025.04.28~2025.05.16
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainimg">
+                <a
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44465&page=3"
+                ></a>
+                <img src="./img/main/귀칼.jpg" alt="귀칼" />
+                <div class="maintitle">
+                  [극장판 귀멸의 칼날~] 4DX 2주차 포스터 <br />
+                  2025.05.12~2025.05.21
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainimg">
+                <a
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44468&page=2"
+                ></a>
+                <img src="./img/main/미임파.jpg" alt="미임파" />
+                <div class="maintitle">
+                  [미션 임파서블-파이널 레코닝 시사회] <br />
+                  2025.05.13~2025.05.14
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainimg">
+                <a
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44586"
+                ></a>
+                <img src="./img/main/씨너스.jpg" alt="씨너스" />
+                <div class="maintitle">
+                  [씨너스:죄인들 4DX포스터] <br />
+                  2025.05.28(수)개봉
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainimg">
+                <a
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44585"
+                ></a>
+                <img src="./img/main/씨너스sx.jpg" alt="sx" />
+                <div class="maintitle">
+                  [씨너스:죄인들] SX 포스터 <br />
+                  2025.05.28(수)개봉
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainimg">
+                <a
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44584"
+                ></a>
+                <img src="./img/main/미임파 와일드.jpeg" alt="와일드" />
+                <div class="maintitle">
+                  [[미션임파서블:파~] ULTRA 4DX MOMENT] <br />
+                  2025.05.22~2025.06.05
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+     </div>
+     </div>
+    </div>
+    
+    <!-- TODO: swiper script -->
+    <script>
+      const mainSwiper = new Swiper(".mySwiper3", {
+        loop: true, // 슬라이드 반복
+        autoplay: {
+          delay: 1500, //
+        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        spaceBetween: 20,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3, // 💡 여기서 3개 보여야 함
+          },
+        },
+      });
+    </script>
+    </main>
+    <!-- main 영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- section영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <section>
+      <div id="container">
+        <div class="section">
+            <div class="title_wrap">
+                <h3>특별관</h3>
+                <a href="#" class="btn">전체보기</a>
+            </div>
+            <div class="specialHall_content">
+                <a href="#"  class="specialHall_link">
+                    <div class="img_wrap"><img src="https://img.cgv.co.kr//Front/Main/2021/1209/16390080561620.png" id="specialHall_img" alt="SUITE CINEMA"></div>
+                </a>
+                
+                <ul class="specialHall_list">
+                    
+                    <li>
+                        <a href="#">
+                            <strong>SUITE CINEMA</strong>
+                            <div class="specialHall_hashTag_wrap">
+                                <span class="specialHall_hashTag">#호텔 컨셉의 프리미엄관</span>                                        
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <strong>CINE &amp; LIVINGROOM</strong>
+                            <div class="specialHall_hashTag_wrap">
+                                <span class="specialHall_hashTag">#신개념 소셜 상영관</span>                                        
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <strong>4DX</strong>
+                            <div class="specialHall_hashTag_wrap">
+                                <span class="specialHall_hashTag">#모션시트 #오감체험</span>                                        
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <strong>CINE de CHEF</strong>
+                            <div class="specialHall_hashTag_wrap">
+                                <span class="specialHall_hashTag">#쉐프가 있는 영화관</span>                                        
+                            </div>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- section영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+     <!-- aside영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <aside>
+      <div id="page2" >
+      <div class="content-area clear">
+      <div class="content-box12">
+        <div class="content-box clear">
+          <h2>영화 관람권</h2>
+          <button>더보기</button>
+          <ul>
+            <li class="c_i">
+              <img src="./img/cgv영화관람권_2.png" alt="빈이미지" />
+              <p>CGV 영화관람권<br />13,000원</p>
+            </li>
+            <li class="c_i">
+              <img src="./img/imax영화관람권_2.png" alt="빈이미지" />
+              <p>IMAX 영화관람권<br />18,000원</p>
+            </li>
+            <li class="c_i">
+              <img src="./img/4dx영화관람권_2.png" alt="빈이미지" />
+              <p>4DX 영화관람권<br />19,000원</p>
+            </li>
+          </ul>
+        </div>
+        <div class="content-box2 clear">
+          <h2>기프트카드</h2>
+          <button>더보기</button>
+          <ul>
+            <li class="c_i_2">
+              <img src="./img/paconnie_a_2.png" alt="빈이미지" />
+              <p>PACONNIE A형<br />금액충전형</p>
+            </li>
+            <li class="c_i_2">
+              <img src="./img/paconnie_b_2.png" alt="빈이미지" />
+              <p>PACONNIE B형<br />금액충전형</p>
+            </li>
+            <li class="c_i_2">
+              <img src="./img/paconnie_c_2.png" alt="빈이미지" />
+              <p>PACONNIE C형<br />금액충전형</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <div class="content-box3 clear">
+          <div class="content-box3-left">
+            <header><ul><li><span>공지사항</span>[행사/이벤트] [CGV] </li><li>예매취소 정책 변경··· &nbsp;&nbsp;&nbsp;&nbsp;<button class="b1">더보기</button></li></ul></header>
+            
+            <section><span>고객센터</span>&nbsp;&nbsp;&nbsp;<b>1544-1122</b><br>
+              <article>고객센터 운영시간 (평일 09:00~18:00)<br>업무시간 외 자동응답 안내 가능합니다.</article>
+            </section>
+            <footer>
+            <ul>
+              <li><button class="b2">FAQ</button></li>
+              <li><button class="b2">1:1문의</button></li>
+              <li><button class="b2">대관/단체 문의</button></li>
+            </ul>
+            </footer>
+          </div>
+          <div class="con-box3-right">
+            <h4>앱 다운로드</h4>
+            <h5>CGV앱에서 더 편리하게 이용하세요</h5>
+            <img src="./img/img_qrcode.gif" alt="qr코드">
+            <p>QR코드를 스캔하고
+            앱설치페이지로 바로 이동하세요</p>
+          </div>
+       </div>
+    </div>
+    </div>
+    </aside>
+     <!-- aside영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- footer영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <footer>
+ <div>
+    <div class="footer">
+        <div class="footer-inner">
+      <div class="footer-menu">
+        <a href="#">회사소개</a>
+        <a href="#">지속가능경영</a>
+        <a href="#">IR</a>
+        <a href="#">채용정보</a>
+        <a href="#">광고/제휴/출점문의</a>
+        <a href="#">이용약관</a>
+        <a href="#">편성기준</a>
+        <a href="#">개인정보처리방침</a>
+        <a href="#">법적고지</a>
+        <a href="#">이메일주소무단수집거부</a>
+        <a href="#">윤리경영</a>
+        <a href="#">사이버감사실</a>
+      </div>
+
+      <p class="middle-line"></p>
+      
+
+      <div class="footer-info">
+        (04377) 서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층 (한강로동)<br />
+        대표이사 : 정종민·사업자등록번호 : 104-81-45690·통신판매업신고번호 :
+        2017-서울용산-0662<a href="a"> 사업자정보확인</a><br />
+        호스팅사업자 : CJ몰리브네트웍스·대표이메일 : cjcgvmaster@cj.net<br />
+        @ CJ CGV. All Rights Reserved
+      </div>
+      <div class="footer-go-right">
+      <select class="footer-go" id="go-list">
+        <option selected><h4 class="h4">계열사 바로가기</h4></option>
+        <option class="bold"><a href="#">CJ그룹</a></option>
+        <option><a href="#">CJ주식회사</a></option>
+        <option class="bold"><a href="#">식품 & 식품서비스</a></option>
+        <option><a href="#">CJ제일제당</a></option>
+        <option><a href="#">CJ푸드빌</a></option>
+        <option><a href="#">CJ프레시웨이</a></option>
+        <option class="bold"><a href="#">생명공학</a></option>
+        <option><a href="#">CJ제일제당 BIO사업부문</a></option>
+        <option><a href="#">CJ Feed&Card</a></option>
+        <option class="bold"><a href="#">물류 & 신유통</a></option>
+        <option><a href="#">CJ대한통운</a></option>
+        <option><a href="#">CJ대한통운 건설부문</a></option>
+        <option><a href="#">CJ올리브영</a></option>
+        <option><a href="#">CJ올리브네트웍스</a></option>
+        <option><a href="#">CJENM 커머스부문</a></option>
+        <option class="bold"><a href="#">엔터테인먼트 & 미디어</a></option>
+        <option><a href="#">CJ ENM 엔터테인먼트부문</a></option>
+        <option><a href="#">CJ CGV</a></option>
+      </select>
+          <div class="footer-go-button">
+    <button class="go-button">Go</button>
+         </div>
+      </div>
+    </div>
+    </div>
+</div>
+    </footer>
+    <!-- footer영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+</body>
+</html>

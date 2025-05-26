@@ -1,0 +1,79 @@
+main {
+  /* height: 100%; */
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 65rem;
+}
+main {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.mainpage {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  clear: both;
+  content: "";
+}
+.mainh1 {
+  padding: 20px;
+  height: 100px;
+}
+
+.main_Slashbtn {
+  max-width: 30%;
+  padding: 5px;
+  border: 2rem solid var(--gray);
+  background-color: var(--white);
+  border-radius: 2rem;
+  border-style: ridge;
+  float: right;
+  margin-right: 5px;
+}
+.mainbox {
+  width: 100%;
+  height: 700px;
+  
+}
+.mainimg {
+  width: 100%;
+  max-width: none;
+  
+}
+.mainimg img {
+  width: 100%;
+  height: 500px; /* 고정 높이 또는 원하는 값 */
+  object-fit: cover; /* 사진 영역 꽉 채우기 */
+  border-radius: 8px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.maintitle {
+  text-align: center;
+}
+
+main .swiper {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;  
+  /* 스크롤 방지  */
+}
+
+
+
+main .swiper-slide {
+  box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 768px) {
+  /* TODO: 가로 여유있으니 조금 줄임 */
+  .main {
+    width: 90%;
+  }
+  /* TODO: 추천상품 3개씩 보이기(33%)(js에서 처리) */
+  .main-box img {
+    width: 100%;
+  }
+}

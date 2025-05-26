@@ -1,0 +1,52 @@
+#nav { background-color: rgb(243, 243, 243); padding-top: 5rem;}
+/* .navOuter{ display: flex; justify-content: center; margin: 0 auto;}  */
+.navOuter{width: 65rem; margin: 0 auto; } 
+/* .navinner{display: flex; flex-direction: column;}  */
+
+
+
+.tmenu li{display: inline-block; font-size: 1.5rem; padding: 0.5rem;}
+.poster-size{ width: 10.5rem; height: 15rem; position: relative; 
+img{max-width: 100%; height: 100%; border-radius: 1rem;}}
+.poster-hover{ position: absolute; top: 0px; left: 0px; border-radius: 1rem;
+    width: 10.5rem; height: 15rem; background-color: rgba(112, 112, 112, 0.459);
+    display: flex; align-items: center; justify-content: center; font-weight: bold;
+}
+.h0{display: none;}
+.posterList li {display: inline-block; padding: 0.8rem;  height:20rem;
+text-align: center;}
+.posterList2{ display: none;}
+.posterList{width: 65rem; }
+nav .swiper{
+     width: 100%; 
+}
+
+.NotImplemented{
+    width: 65rem; height: 30rem; margin: 0 auto;
+    font-size: 2rem; border: 0.5rem solid skyblue;
+    padding: 2rem;
+   
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    .posterList{display: none;}
+    .posterList2{display: contents; width: 100%;}
+    .posterList2 li {display: inline-block; padding: 0.8rem 5vw;  height:auto;
+       text-align: center;}
+    .navOuter{width: 100vw; margin: 0 auto;}
+    .poster-size{ width: 35vw; height: auto; position: relative;
+img{max-width: 100%; height: 50vw; border-radius: 1rem;}}
+.poster-hover{ position: absolute; top: 0px; left: 0px; border-radius: 1rem;
+    width: 35vw; height: 50vw; background-color: rgba(112, 112, 112, 0.459);
+    display: flex; align-items: center; justify-content: center; font-weight: bold;
+}
+.posterList2 ul{ padding: 0 auto; display: flex; align-items: center; justify-content: center; }
+.tmenu{margin: 0 10vw;}
+
+
+}

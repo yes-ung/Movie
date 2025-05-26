@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/00_style.css">
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="../css/Main.css">
+    <link rel="stylesheet" href="./css/main2.css">
     <link rel="stylesheet" href="./css/section.css">
     <link rel="stylesheet" href="./css/aside2.css" />
     <link rel="stylesheet" href="./css/cgvfooter.css" />
@@ -103,7 +103,7 @@
       </nav>
 
       <!-- 4. 스와이프 컨테이너 -->
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper1">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="https://placehold.co/600x400" alt="메인 배너 1" />
@@ -129,7 +129,7 @@
 
     <!-- Swiper JS -->
     <script>
-      var headerSwiper = new Swiper(".mySwiper", {
+      var headerSwiper = new Swiper(".mySwiper1", {
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
@@ -155,7 +155,7 @@
               </ul>
           </div>    
           <div class="posterList">
-              <div class="swiper mySwiper">
+              <div class="swiper mySwiper2">
                   <div class="swiper-wrapper">
                       <div class="swiper-slide">
                           <!-- 1번 배너 이미지  -->
@@ -233,7 +233,7 @@
               </div>
           </div>
           <div class="posterList2">
-              <div class="swiper mySwiper">
+              <div class="swiper mySwiper2">
                   <div class="swiper-wrapper">
                       <div class="swiper-slide">
                           <!-- 1번 배너 이미지  -->
@@ -354,86 +354,127 @@
     <script src="./js/nav.js"></script>
 <!-- nav영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
       <!-- main 영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-        <main>
-    <!-- TODO: EVENT 및 버튼  -->
-     <div class="mainpage">
+    <main>
+     <!-- TODO: Event 및 버튼 -->
+    <div class="mainpage">
       <h1 class="mainh1">
         EVENT
         <button class="main_Slashbtn">전체보기 ></button>
         <button class="main_Slashbtn">||</button>
       </h1>
-      <!-- TODO: swiper / 이미지 -->
-      <div class="main-area clear">
-    <div class="main swiper">
-      <div class="main swiper-wrapper">
-        <div class="main swiper-slide">
-          <div class="main-box">
-            <ul>
-                <li class="mainli">
-            <a
-              href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44340"
-            ></a>
-            <img src="./img/Main_img/section1.jpg" alt="오구오구" />
-            <p class="main-title">
-              5월엔 CGV가 오구오구 <br />
-              2025.04.28~2025.05.16
-            </p>
-            </li>
-            <li class="mainli">
+      <!-- TODO: swiper slide  -->
+      <div class="mainbox">
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="mainimg">
                 <a
-              href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44491"
-            ></a>
-            <img src="./img/Main_img/미임파.jpg" alt="미션" />
-            <p class="main-title">
-              [미션 임파서블-파이널 레코닝 SCREENX시사회] <br />
-              2025.05.13~2025.05.14
-            </p>
-            </li>
-            <li class="mainli">
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44340"
+                ></a>
+                <img src="./img/main/section1.jpg" alt="오구오구" />
+                <div class="maintitle">
+                  5월엔 CGV가 오구오구 <br />
+                  2025.04.28~2025.05.16
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainimg">
                 <a
-              href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44465"
-            ></a>
-            <img src="./img/Main_img/귀칼.jpg" alt="귀멸" />
-            <p class="main-title">
-              [극장판 귀멸의 칼날~] 4DX 2주차 포스터 <br />
-              2025.05.12~2025.05.21
-            </p>
-            </li>
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44465&page=3"
+                ></a>
+                <img src="./img/main/귀칼.jpg" alt="귀칼" />
+                <div class="maintitle">
+                  [극장판 귀멸의 칼날~] 4DX 2주차 포스터 <br />
+                  2025.05.12~2025.05.21
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainimg">
+                <a
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44468&page=2"
+                ></a>
+                <img src="./img/main/미임파.jpg" alt="미임파" />
+                <div class="maintitle">
+                  [미션 임파서블-파이널 레코닝 시사회] <br />
+                  2025.05.13~2025.05.14
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainimg">
+                <a
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44586"
+                ></a>
+                <img src="./img/main/씨너스.jpg" alt="씨너스" />
+                <div class="maintitle">
+                  [씨너스:죄인들 4DX포스터] <br />
+                  2025.05.28(수)개봉
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainimg">
+                <a
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44585"
+                ></a>
+                <img src="./img/main/씨너스sx.jpg" alt="sx" />
+                <div class="maintitle">
+                  [씨너스:죄인들] SX 포스터 <br />
+                  2025.05.28(수)개봉
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainimg">
+                <a
+                  href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44584"
+                ></a>
+                <img src="./img/main/미임파 와일드.jpeg" alt="와일드" />
+                <div class="maintitle">
+                  [[미션임파서블:파~] ULTRA 4DX MOMENT] <br />
+                  2025.05.22~2025.06.05
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        </ul>
-        <!-- TODO: swiper 슬라이드2 -->
-        <div class="main swiper-slide">
-          <div class="main-box">
-            <a
-              href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44491"
-            ></a>
-            <img src="./img/Main_img/미임파.jpg" alt="미션" />
-            <p class="main-title">
-              [미션 임파서블-파이널 레코닝 SCREENX 시사회] <br />
-              2025.05.13~2025.05.14
-            </p>
-          </div>
-        </div>
-        <!-- TODO: swiper 슬라이드3 -->
-        <div class="main swiper-slide">
-          <div class="main-box">
-            <a
-              href="http://www.cgv.co.kr/culture-event/event/detailViewUnited.aspx?seq=44465"
-            ></a>
-            <img src="./img/Main_img/귀칼.jpg" alt="귀멸" />
-            <p class="main-title">
-              [극장판 귀멸의 칼날~] 4DX 2주차 포스터 <br />
-              2025.05.12~2025.05.21
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="main swiper-pagination"></div>
-      <div class="main swiper-button-prev"></div>
-      <div class="main swiper-button-next"></div>
-      <script src="js/Main_custom.js"></script>
+        
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+     </div>
+     </div>
     </div>
+    
+    <!-- TODO: swiper script -->
+    <script>
+      const mainSwiper = new Swiper(".mySwiper3", {
+        loop: true, // 슬라이드 반복
+        autoplay: {
+          delay: 1500, //
+        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        spaceBetween: 20,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3, // 💡 여기서 3개 보여야 함
+          },
+        },
+      });
+    </script>
     </main>
     <!-- main 영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <!-- section영역@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->

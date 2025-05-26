@@ -34,5 +34,5 @@ $(function(){
     });
  });
 
- let navSwiper = new Swiper(".mySwiper",{
+ let navSwiper = new Swiper(".mySwiper2",{
     })

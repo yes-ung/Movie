@@ -1,6 +1,7 @@
 
 #page2{
   width: 96vw;
+  max-width: 65rem;
   margin: 5rem auto;
   padding: 0;
   box-sizing: border-box;
